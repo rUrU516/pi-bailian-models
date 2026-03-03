@@ -1,68 +1,51 @@
 # Pi BaiLian Models / 百炼模型扩展
 
-Adds Alibaba Cloud BaiLian (DashScope) Qwen models to Pi with OAuth/API key support.
+为 Pi 添加阿里云百炼 coding-plan 的 AI 模型支持。
 
-为 Pi 添加阿里云百炼（DashScope）通义千问模型，支持 OAuth/API 密钥认证。
+Adds Alibaba Cloud BaiLian **coding-plan** models to Pi.
 
-## Features / 功能
+## 可用模型 / Available Models
 
-- **Multiple Qwen Models** - Access to latest Qwen3.5, Qwen3-Max, Qwen3-Coder, and more
-- **Multiple AI Providers** - Includes MiniMax, GLM (Zhipu), Kimi models
-- **OAuth Support** - Secure API key management through Pi's OAuth system
-- **Zero Cost Configuration** - Pre-configured with zero cost settings for testing
+| 模型 | 上下文 | 最大输出 | 推理 |
+|------|--------|----------|------|
+| qwen3.5-plus | 1M | 65,536 | ✅ |
+| qwen3-max | 262K | 65,536 | ✅ |
+| qwen3-coder-next | 262K | 65,536 | ✅ |
+| qwen3-coder-plus | 1M | 65,536 | ✅ |
+| MiniMax-M2.5 | 204K | 131,072 | ❌ |
+| glm-5 / glm-4.7 | 202K | 16,384 | ✅ |
+| kimi-k2.5 | 262K | 32,768 | ✅ |
 
-- **多模型支持** - 支持最新的 Qwen3.5、Qwen3-Max、Qwen3-Coder 等
-- **多 AI 提供商** - 包含 MiniMax、GLM（智谱）、Kimi 等模型
-- **OAuth 认证** - 通过 Pi 的 OAuth 系统安全管理 API 密钥
-- **零成本配置** - 预配置为零成本设置，便于测试
-
-## Available Models / 可用模型
-
-| Model | Provider | Context Window | Max Tokens | Reasoning |
-|-------|----------|----------------|------------|-----------|
-| qwen3.5-plus | Qwen | 1M | 65,536 | ✅ |
-| qwen3-max | Qwen | 262K | 65,536 | ✅ |
-| qwen3-coder-next | Qwen | 262K | 65,536 | ✅ |
-| qwen3-coder-plus | Qwen | 1M | 65,536 | ✅ |
-| MiniMax-M2.5 | MiniMax | 204K | 131,072 | ❌ |
-| glm-5 / glm-4.7 | Zhipu | 202K | 16,384 | ✅ |
-| kimi-k2.5 | Kimi | 262K | 32,768 | ✅ |
-
-## Installation / 安装
+## 安装 / Installation
 
 ```bash
 pi install github.com/rUrU516/pi-bailian-models
 ```
 
-## Update / 更新
-
-To get the latest models and features:
-
-获取最新模型和功能：
+## 更新 / Update
 
 ```bash
 pi update
 ```
 
-## Usage / 使用
+## 使用方法 / Usage
 
-1. After installation, the "百炼 coding-plan" provider will be available in Pi
-2. Use `/login` command to activate OAuth and enter your **DashScope API key for coding-plan**
-3. The API key is securely stored and automatically used for subsequent requests
+1. **进入 Pi 后**，在对话框中输入 `/login`
+2. 选择 **"百炼 coding-plan"** 提供商
+3. 输入你的 **百炼 coding-plan API 密钥**（以 `sk-` 开头）
+4. 之后在模型选择中选择对应的模型即可使用
 
-安装后，Pi 中将可用"百炼 coding-plan"提供商。使用 `/login` 命令激活 OAuth 并输入**百炼 coding-plan 专用的 DashScope API 密钥**，密钥将安全存储并自动用于后续请求。
+> 💡 API 密钥获取：访问 [阿里云百炼控制台 - coding-plan](https://bailian.console.aliyun.com/?tab=codingPlan)
 
-### Getting API Key / 获取 API 密钥
+---
 
-1. Visit [Alibaba Cloud Bailian - coding-plan](https://bailian.console.aliyun.com/?tab=codingPlan)
-2. Create an account and generate an API key specifically for **coding-plan**
-3. Copy the key (starts with `sk-`)
+**After entering Pi:**
+1. Type `/login` in the chat
+2. Select **"百炼 coding-plan"** provider
+3. Enter your **BaiLian coding-plan API key** (starts with `sk-`)
+4. Select the model you want to use
 
-访问 [阿里云百炼控制台 - coding-plan](https://bailian.console.aliyun.com/?tab=codingPlan)，创建账户并生成**coding-plan 专用**的 API 密钥（以 `sk-` 开头）。
-
-> ⚠️ Note: This API key is specifically for the **coding-plan** service, not the general DashScope API.
->
-> ⚠️ 注意：此 API 密钥专用于 **coding-plan** 服务，而非通用的 DashScope API。
+> 💡 Get API key: [Alibaba Cloud Bailian - coding-plan](https://bailian.console.aliyun.com/?tab=codingPlan)
 
 ## License / 许可证
 
