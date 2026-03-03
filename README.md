@@ -4,7 +4,12 @@
 
 Adds Alibaba Cloud BaiLian **coding-plan** models to Pi.
 
-![模型列表](./screenshot.png)
+<table>
+<tr>
+<td><img src="./screenshot.png" width="300"/></td>
+<td><img src="./screenshot-login.png" width="300"/></td>
+</tr>
+</table>
 
 ## 可用模型 / Available Models
 
@@ -36,8 +41,6 @@ pi update
 2. 选择 **"百炼 coding-plan"** 提供商
 3. 输入你的 **百炼 coding-plan API 密钥**（以 `sk-` 开头）
 4. 之后在模型选择中选择对应的模型即可使用
-
-![Login](./screenshot-login.png)
 
 > 💡 API 密钥获取：访问 [阿里云百炼控制台 - coding-plan](https://bailian.console.aliyun.com/?tab=codingPlan)
 
