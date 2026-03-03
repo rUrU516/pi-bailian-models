@@ -47,18 +47,22 @@ pi update
 ## Usage / 使用
 
 1. After installation, the "百炼 coding-plan" provider will be available in Pi
-2. Use `/login` command to activate OAuth and enter your API key
+2. Use `/login` command to activate OAuth and enter your **DashScope API key for coding-plan**
 3. The API key is securely stored and automatically used for subsequent requests
 
-安装后，Pi 中将可用"百炼 coding-plan"提供商。使用 `/login` 命令激活 OAuth 并输入 API 密钥，密钥将安全存储并自动用于后续请求。
+安装后，Pi 中将可用"百炼 coding-plan"提供商。使用 `/login` 命令激活 OAuth 并输入**百炼 coding-plan 专用的 DashScope API 密钥**，密钥将安全存储并自动用于后续请求。
 
 ### Getting API Key / 获取 API 密钥
 
-1. Visit [Alibaba Cloud DashScope](https://dashscope.console.aliyun.com/)
-2. Create an account and generate an API key
+1. Visit [Alibaba Cloud Bailian - coding-plan](https://bailian.console.aliyun.com/?tab=codingPlan)
+2. Create an account and generate an API key specifically for **coding-plan**
 3. Copy the key (starts with `sk-`)
 
-访问 [阿里云百炼控制台](https://dashscope.console.aliyun.com/)，创建账户并生成 API 密钥（以 `sk-` 开头）。
+访问 [阿里云百炼控制台 - coding-plan](https://bailian.console.aliyun.com/?tab=codingPlan)，创建账户并生成**coding-plan 专用**的 API 密钥（以 `sk-` 开头）。
+
+> ⚠️ Note: This API key is specifically for the **coding-plan** service, not the general DashScope API.
+>
+> ⚠️ 注意：此 API 密钥专用于 **coding-plan** 服务，而非通用的 DashScope API。
 
 ## License / 许可证
 
