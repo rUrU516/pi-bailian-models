@@ -47,10 +47,10 @@ pi update
 ## Usage / 使用
 
 1. After installation, the "百炼 coding-plan" provider will be available in Pi
-2. When you first use it, you'll be prompted to enter your DashScope API key
+2. Use `/login` command to activate OAuth and enter your API key
 3. The API key is securely stored and automatically used for subsequent requests
 
-安装后，Pi 中将可用"百炼 coding-plan"提供商。首次使用时会提示输入 DashScope API 密钥，密钥将安全存储并自动用于后续请求。
+安装后，Pi 中将可用"百炼 coding-plan"提供商。使用 `/login` 命令激活 OAuth 并输入 API 密钥，密钥将安全存储并自动用于后续请求。
 
 ### Getting API Key / 获取 API 密钥
 
