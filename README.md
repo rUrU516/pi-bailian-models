@@ -1,4 +1,4 @@
-# Pi BaiLian Models / 百炼模型扩展
+# Pi Agent BaiLian Models / Pi Agent 百炼模型扩展
 
 为 Pi 添加阿里云百炼 coding-plan 的 AI 模型支持。
 
