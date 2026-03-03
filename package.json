@@ -1,0 +1,15 @@
+{
+  "name": "pi-bailian-coding-plan",
+  "version": "1.0.0",
+  "description": "BaiLian (Alibaba Cloud) coding plan extension for pi - adds Qwen models with custom OAuth support",
+  "keywords": ["pi-package", "bailian", "alibaba", "qwen", "models"],
+  "type": "module",
+  "main": "./index.ts",
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-coding-agent": "*"
+  }
+}
