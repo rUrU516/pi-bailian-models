@@ -4,6 +4,8 @@
 
 Adds Alibaba Cloud BaiLian **coding-plan** models to Pi.
 
+![Screenshot](./screenshot.png)
+
 ## 可用模型 / Available Models
 
 | 模型 | 上下文 | 最大输出 | 推理 |
