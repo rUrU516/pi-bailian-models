@@ -6,8 +6,8 @@ Adds Alibaba Cloud BaiLian **coding-plan** models to Pi.
 
 <table>
 <tr>
-<td><img src="./screenshot.png" width="300"/></td>
-<td><img src="./screenshot-login.png" width="300"/></td>
+<td><img src="./screenshot.png" width="400"/></td>
+<td><img src="./screenshot-login.png" width="400"/></td>
 </tr>
 </table>
 
