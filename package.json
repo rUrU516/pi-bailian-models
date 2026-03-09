@@ -1,11 +1,22 @@
 {
   "name": "pi-bailian-models",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Adds Alibaba Cloud BaiLian Qwen models to pi with OAuth support",
   "keywords": ["pi-package", "bailian", "alibaba", "qwen", "models", "oauth"],
   "type": "module",
   "main": "./index.ts",
   "pi": {
     "extensions": ["./index.ts"]
+  },
+  "files": [
+    "index.ts",
+    "README.md",
+    "package-lock.json"
+  ],
+  "license": "MIT",
+  "author": "Zhuoru <zhuoruli0516@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rUrU516/pi-bailian-models.git"
   }
 }
