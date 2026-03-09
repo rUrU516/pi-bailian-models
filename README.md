@@ -25,8 +25,14 @@ Adds Alibaba Cloud BaiLian **coding-plan** models to Pi.
 
 ## 安装 / Installation
 
+**推荐方式 (Recommended):**
 ```bash
-pi install github.com/rUrU516/pi-bailian-models
+pi install npm:pi-bailian-models
+```
+
+**从源码安装 (From source):**
+```bash
+pi install git:github.com/rUrU516/pi-bailian-models
 ```
 
 ## 更新 / Update
