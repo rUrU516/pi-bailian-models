@@ -15,6 +15,10 @@ Adds Alibaba Cloud BaiLian **coding-plan** models to Pi.
 
 | 模型 | 上下文 | 最大输出 | 推理 |
 |------|--------|----------|------|
+| qwen3.8-max | 960K | 131,072 | ✅ |
+| qwen3.7-plus | 128K | 16,384 | ✅ |
+| qwen3.7-max | 128K | 16,384 | ✅ |
+| qwen3.6-flash | 128K | 16,384 | ✅ |
 | qwen3.5-plus | 1M | 65,536 | ✅ |
 | qwen3-max | 262K | 65,536 | ✅ |
 | qwen3-coder-next | 262K | 65,536 | ✅ |
