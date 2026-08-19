@@ -64,10 +64,89 @@ const MODEL_STUDIO_MODELS = [
 		contextWindow: 1_000_000,
 		maxTokens: 65_536,
     compat: {
-      supportsDeveloperRole: false,      
-      supportsReasoningEffort: false,    
-      maxTokensField: "max_tokens",     
-      requiresToolResultName: true,    
+      supportsDeveloperRole: false,
+      supportsReasoningEffort: false,
+      maxTokensField: "max_tokens",
+      requiresToolResultName: true,
+      requiresMistralToolIds: true,
+      thinkingFormat: "qwen"
+    }
+	},
+	{
+		// Qwen3.7 Plus: tracked in issue #3 as the most-requested missing
+		// model. Same compat shape as the rest of the Qwen family on the
+		// DashScope coding-plan endpoint.
+		id: "qwen3.7-plus",
+		name: "qwen3.7-plus",
+		reasoning: true,
+		input: ["text", "image"] as const,
+		cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+		contextWindow: 128_000,
+		maxTokens: 16_384,
+    compat: {
+      supportsDeveloperRole: false,
+      supportsReasoningEffort: false,
+      maxTokensField: "max_tokens",
+      requiresToolResultName: true,
+      requiresMistralToolIds: true,
+      thinkingFormat: "qwen"
+    }
+	},
+	{
+		// Qwen3.7 Max: larger context sibling of qwen3.7-plus. Reasoning
+		// capability follows the upstream model's actual behavior on the
+		// DashScope endpoint (advertised as adaptive thinking).
+		id: "qwen3.7-max",
+		name: "qwen3.7-max",
+		reasoning: true,
+		input: ["text", "image"] as const,
+		cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+		contextWindow: 128_000,
+		maxTokens: 16_384,
+    compat: {
+      supportsDeveloperRole: false,
+      supportsReasoningEffort: false,
+      maxTokensField: "max_tokens",
+      requiresToolResultName: true,
+      requiresMistralToolIds: true,
+      thinkingFormat: "qwen"
+    }
+	},
+	{
+		// Qwen3.6 Flash: low-latency tier of the Qwen3.x family. Smaller
+		// output budget than the plus/max variants but the same compat.
+		id: "qwen3.6-flash",
+		name: "qwen3.6-flash",
+		reasoning: true,
+		input: ["text", "image"] as const,
+		cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+		contextWindow: 128_000,
+		maxTokens: 16_384,
+    compat: {
+      supportsDeveloperRole: false,
+      supportsReasoningEffort: false,
+      maxTokensField: "max_tokens",
+      requiresToolResultName: true,
+      requiresMistralToolIds: true,
+      thinkingFormat: "qwen"
+    }
+	},
+	{
+		// Qwen3.8 Max: top-of-stack on the Qwen3 line, advertised with
+		// adaptive thinking up to the xhigh effort level. Same compat
+		// shape as the rest of the family on DashScope.
+		id: "qwen3.8-max",
+		name: "qwen3.8-max",
+		reasoning: true,
+		input: ["text", "image"] as const,
+		cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+		contextWindow: 983_616,
+		maxTokens: 131_072,
+    compat: {
+      supportsDeveloperRole: false,
+      supportsReasoningEffort: false,
+      maxTokensField: "max_tokens",
+      requiresToolResultName: true,
       requiresMistralToolIds: true,
       thinkingFormat: "qwen"
     }
